@@ -175,7 +175,7 @@ git checkout release-1.4
 #因为运行bootstrap.sh文件需要下载一些二进制文件，但是这些文件又存放在国外的网站上，所以下载十分缓慢，不能通过直接运行bootstrap.sh来安装fabric所需的工具和镜像。运行该文件主要进行了3个步骤，可以分开操作
 #步骤一
 cd $GOPATH/src/github.com/hyperledger/fabric/scripts
-git clone https://github.com.cnpmjs.org/hyperledger/fabric-samples.git
+git clone -b release-1.4 https://github.com.cnpmjs.org/hyperledger/fabric-samples.git
 git branch -a
 git checkout release-1.4
 #步骤二
